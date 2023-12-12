@@ -1,0 +1,39 @@
+<p>
+  products works!
+</p>
+
+<input  type="text" [formControl]="name" />
+
+<button (click)="Submit()">
+  Gửi
+</button>
+
+<table class="table">
+  <tbody>
+  <tr>
+    <td>
+      name
+    </td>
+    <td>
+      title
+    </td>
+    <td>
+      Ảnh
+    </td>
+  </tr>
+  <tr *ngFor="let item of data">
+    <td>
+        {{item.body}}
+    </td>
+    <td>
+      {{item.title}}
+    </td>
+    <td>
+      <img src="https://images2.thanhnien.vn/528068263637045248/2023/5/11/base64-1683774325007671396078.png"  loading="lazy" style="width: 200px; height: 200px;">
+    </td>
+  </tr>
+</tbody>
+</table>
+
+
+

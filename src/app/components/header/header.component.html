@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="box">
+          <ul>
+            <li>
+              <img
+                src="http://ausfood.monamedia.net/wp-content/uploads/2023/11/logo-monashop-meta-2.png"
+                class="logo"
+              />
+            </li>
+            <li>Trang chủ</li>
+            <li>
+              <a [routerLink]="['/shop']" routerLinkActive="router-link-active">
+                Giới thiệu
+              </a>
+            </li>
+            <li>
+              <a
+                [routerLink]="['/products']"
+                routerLinkActive="router-link-active"
+              >
+                Sản Phẩm
+              </a>
+            </li>
+            <li>Hàng mới về</li>
+
+            <li>Kiến thức ẩm thực</li>
+            <li>Liên hệ</li>
+            <li class="search">
+              <input class="input" placeholder="Tìm kiếm..." />
+              <mat-icon
+                aria-hidden="false"
+                aria-label="Example home icon"
+                fontIcon="search"
+                class="icon-search"
+              ></mat-icon>
+            </li>
+            <li>
+              <mat-icon
+                aria-hidden="false"
+                fontIcon="local_grocery_store"
+                class="icon-search"
+              ></mat-icon>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
